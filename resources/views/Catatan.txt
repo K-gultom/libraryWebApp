@@ -1,0 +1,38 @@
+Fitur
+1.  Pendaftaran anggota (pengguna)
+2.  Katalog buku (dengan pencarian, filter, dan pagination)
+3.  Detail buku (sinop Hbsis, pengarang, penerbit, tahun terbit)
+4.  Pinjam buku (dengan sistem reservasi dan batas waktu pinjam)
+5.  Pengembalian buku (dengan sistem notifikasi)
+6.  Sistem rating dan review buku
+7.  Profil anggota (riwayat pinjam, rating, dan review)
+8.  Sistem keamanan dan privasi (enkripsi data, verifikasi identitas)
+9.  Sistem notifikasi (email, SMS) untuk transaksi dan pengingat
+
+Struktur Database
+1.  Tabel anggota
+•  id (primary key)
+•  nama
+•  alamat
+•  kontak
+•  email
+
+2.  Tabel buku
+•  id (primary key)
+•  judul
+•  pengarang
+•  penerbit
+•  tahun_terbit
+
+3.  kategori buku
+•  category
+•  nomor_rak
+
+
+3.  Tabel pinjam
+•  id (primary key)
+•  id_anggota (foreign key ke tabel anggota)
+•  id_buku (foreign key ke tabel buku)
+•  tanggal_pinjam
+•  tanggal_kembali
+•  status_pinjam
